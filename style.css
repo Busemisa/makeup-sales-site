@@ -1,0 +1,328 @@
+.ust{
+    background-color: black;
+    text-align: center;
+    
+}
+
+.buttonone{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    width: 100px;
+    border: none;
+    margin-top: 15px;
+    font-size: 17px;
+    position: relative;
+}
+
+.buttonone::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Çizgi kalınlığı */
+    background-color: white; /* Çizgi rengi */
+    transform: scaleX(0); /* Başlangıçta çizgiyi görünmez yapmak için */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease; /* Geçiş efekti */
+}
+
+.buttonone:hover::before {
+    transform: scaleX(1); /* Çizgiyi görünür yapmak için */
+}
+
+.pone{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+}
+
+.fa-solid fa-user fa-xl{
+    margin-top: 55px;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.in{
+    margin-top: 20px;
+    color: white;
+}
+
+
+
+.b{
+    background-color: rgb(255, 255, 255);
+}
+
+.genis{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+   
+}
+
+.buttonn{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    border:none;
+    margin-top: 25px;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 20px;
+    
+
+}
+
+.buttonn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Çizgi kalınlığı */
+    background-color: black; /* Çizgi rengi */
+    transform: scaleX(0); /* Başlangıçta çizgiyi görünmez yapmak için */
+    transform-origin: bottom left;
+    transition: transform 0.3s ease; /* Geçiş efekti */
+}
+
+.buttonn:hover::before {
+    transform: scaleX(1); /* Çizgiyi görünür yapmak için */
+}
+
+.hicin{
+    margin-top: 25px;
+    cursor: pointer; /*üzerine imleç ile gelindiğinde tıklanılabilirlik özelliği sağlar*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ptwo{
+    color: black;
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sepet{
+    color: black;
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.resim{
+    width: 1500px;
+    height: 800px;
+}
+
+.yaz{
+    margin-top: -700px;
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.altta{
+    font-size: 20px;
+    margin-left: 105px;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.buttonthree{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    border: black solid 1px;
+    background-color: black;
+    width: 170px;
+    height: 40px;
+    margin-left: 105px;
+    margin-top: 30px;
+  
+  
+  
+}
+
+.buttonthree:hover{
+    background-color: transparent;
+    border: solid 1px black;
+    color: black;
+    transition: 0.5s;
+}
+
+.marka{
+    margin-top: 500px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.uc{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    margin-left: 190px;
+    margin-bottom: 40px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex; /* Markaların yan yana olması için flex kullanıldı */
+}
+
+.page1 {
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.page2 {
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.brand {
+    flex: 0 0 25%; /* Marka div'lerinin genişlikleri eşit olarak paylaşılır */
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.navigation-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin-left: -80px;
+    bottom: 1px; /* Alt kenara mesafe eklenmiştir */
+    
+    
+    
+    
+    
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.dot.active {
+    background-color: orange; /* Aktif sayfa yuvarlağının içi turuncu yapılır */
+}
+
+.nasıl{
+    margin-top: -10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+
+
+.sari{
+    background-color: bisque;
+    height: 3500px;
+    margin-top: -250px;
+
+}
+
+.araba{
+    height: 300px;
+    width: 300px;
+}
+
+.ucluler{
+    text-align: center;
+    margin-bottom: -300px;
+  
+   
+    
+}
+
+.ek{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}
+
+.beyaz{
+    border: solid 1px white;
+}
+
+.saributton{
+  
+position:absolute;
+ padding-left: 50%;
+ padding-top: 50%;
+ margin-top: -650px;
+}
+
+
+
+.Yellow_Button{
+    background-color: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(50%, rgba(252,205,77,0.85)), color-stop(51%, rgba(248,181,0,0.84)), color-stop(100%, rgba(251,223,147,0.69)));
+    border-radius: 107px 32px 108px 10px;
+    -moz-border-radius: 107px 32px 108px 10px;
+    -webkit-border-radius: 107px 32px 108px 10px;
+    border: 2px dotted #000000;
+
+
+}
+.Yellow_Button:hover{
+    -webkit-box-shadow: 16px 20px 39px 19px rgba(0,0,0,0.5);
+-moz-box-shadow: 16px 20px 39px 19px rgba(0,0,0,0.5);
+box-shadow: 16px 20px 39px 19px rgba(0,0,0,0.5);
+}

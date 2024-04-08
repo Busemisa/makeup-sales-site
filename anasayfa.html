@@ -1,0 +1,243 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap kütüphanesi eklendi-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- FontAwesome kütüphanesini dahil etme -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- fontawesome kütüphanesi dahil edildi-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <title>Makyaj Satis Sitesi</title>
+</head>
+
+<body>
+    <!--en ust siyah yazı-->
+    <div class="ust">
+        <div class="row">
+            <div class="col-4">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i>
+                <button class="buttonone">Ara...</button>
+            </div>
+            <div class="col-4">
+                <p class="pone">Ayın Kutusunu Satın Alın! 500 TL'lik Ürünler Sadece 250 TL</p>
+            </div>
+            <div class="col-4">
+                <i style="margin-top: 30px; cursor: pointer;" class="fa-solid fa-user fa-xl in"
+                    style="color: #ffffff;"></i>
+                <p style="margin-left: 80px; margin-top: -10px; cursor: pointer;" class="in">Giriş</p>
+
+            </div>
+        </div>
+    </div>
+    <!--en ust siyah yazı bitişi-->
+
+    <!--navbar başlangıcı-->
+    <nav>
+        <div class="genis">
+            <div class="container b">
+                <div class="row">
+                    <div class="col-4">
+                        <button class="buttonn">Abonelik Kutuları</button>
+                        <button class="buttonn">İletişim</button>
+
+
+
+                    </div>
+                    <div class="col-4">
+                        <h2 class="hicin">BOX <i class="fa-solid fa-box-open fa-xl" style="color: #030303;"></i> ROX
+                        </h2>
+                    </div>
+                    <div class="col-4">
+                        <p class="sepet">Sepet(0)</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar bitişi-->
+
+    <style>
+        .buyuk, .altta {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+    </style>
+
+
+
+
+    <!--buyuk resim başlangıcı-->
+    <div class="buyuk">
+        <img class="resim" src="resim/turuncu.webp">
+        <h1 class="yaz">Özel Hazırlanmış <br>
+            Abonelik Kutuları
+        </h1>
+
+        <h1 class="altta">
+            Bu, bir paragraf. Kendi metninizi eklemek için <br> buraya tıklayın. Kullanıcılara kendinizi tanıtın.
+        </h1>
+
+        <button class="buttonthree">Kutu Satın Al</button>
+
+    </div>
+    <!--buyuk resim bitişi-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                document.querySelector('.buyuk').style.opacity = '1';
+                document.querySelector('.buyuk').style.transform = 'translateY(0)';
+            }, 500); // 500 milisaniye sonra efekt başlasın, isteğinize göre ayarlayabilirsiniz.
+            
+            setTimeout(function () {
+                document.querySelector('.altta').style.opacity = '1';
+                document.querySelector('.altta').style.transform = 'translateY(0)';
+            }, 1000); // 1000 milisaniye sonra efekt başlasın, isteğinize göre ayarlayabilirsiniz.
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <div>
+        <p class="marka">Markalar</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--slider başlangıcı-->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide page1">
+                <h1>Marka Adı 1</h1>
+                <h1>Marka Adı 2</h1>
+                <h1>Marka Adı 3</h1>
+                <h1>Marka Adı 4</h1>
+            </div>
+            <div class="slide page2">
+                <h1>Marka Adı 5</h1>
+                <h1>Marka Adı 6</h1>
+                <h1>Marka Adı 7</h1>
+                <h1>Marka Adı 8</h1>
+            </div>
+        </div> <br> <br>
+        <div class="navigation-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <br> <br> <br>
+
+    <script src="script.js"></script>
+
+    <!--slider bitişi-->
+
+
+    <div>
+        <p class="nasıl">Nasıl Çalışıyoruz</p>
+    </div>
+
+    <br> <br> <br> <br>
+
+
+
+    <div>
+        <div class="container ucluler">
+            <div class="row">
+                <div class="col-4">
+                    <img class="araba" src="resim/araba.png">
+                    <br> <br>
+                    <p class="uc">Her Ay Kapınıza Getirelim</p>
+                    <br>
+                    <p class="ek">Bu, bir paragraf. Kendi metninizi eklemek için <br>tıklayın.</p>
+                </div>
+                <div class="col-4">
+                    <img class="araba" src="resim/araba.png">
+                    <br> <br>
+                    <p class="uc">Her Ay Kapınıza Getirelim</p>
+                    <br>
+                    <p class="ek">Bu, bir paragraf. Kendi metninizi eklemek için <br>tıklayın.</p>
+                </div>
+                <div class="col-4">
+                    <img class="araba" src="resim/araba.png">
+                    <br> <br>
+                    <p class="uc">Her Ay Kapınıza Getirelim</p>
+                    <br>
+                    <p class="ek">Bu, bir paragraf. Kendi metninizi eklemek için <br> tıklayın.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="background-color: rgb(255, 223, 181); height: 600px; ">
+
+
+        <div style="padding-top: 400px;">
+            <hr style="border: solid 3px rgb(192, 12, 12); ">
+
+        </div>
+
+        
+
+
+        <div class="saributton ">
+            <button class="Yellow_Button">satın al</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
